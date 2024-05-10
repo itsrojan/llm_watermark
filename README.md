@@ -111,10 +111,16 @@ The experimental setup detailed in the paper includes several steps:
 
 The use of these datasets and the rigorous testing methodology help ensure that the watermarking techniques developed are robust, effective, and versatile enough to be applied across different types of text and under various operational scenarios. This approach not only tests the technical capability of the watermarking method but also its practical applicability in real-world settings where diverse text inputs and outputs are common.
 
+<p align="right">
+    <img src="figure.png" alt="figure" width="400"/>
+</p>
+
+The two graphs demonstrate the trade-off between watermark strength and text quality in language models. The left graph shows that as text quality improves (indicated by lower Oracle Model Perplexity, PPL), the strength of the watermark (measured by z-score) tends to decrease, especially noticeable at smaller green list sizes (γ). The right graph illustrates that using beam search with more beams allows for stronger watermarks with minimal impact on text quality, maintaining high z-scores across various PPL levels. These visualizations collectively highlight how watermark configurations and beam search can be optimized to balance text quality with the effectiveness of watermarking.
+
 ## **Conclusion**
 
 The paper "A Watermark for Large Language Models" concludes that their watermarking algorithm is effective, requiring minimal computational effort for verification without needing access to the model. The approach has a low risk of false positives and can be integrated into existing models without retraining, making it practical for securing AI-generated content.
 
 ---
 
-*Code and dataset can be found on the [GitHub](https://github.com/jwkirchenbauer/lm-watermarking).*
+*Paper code can be found on the [GitHub](https://github.com/jwkirchenbauer/lm-watermarking).*
